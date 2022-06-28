@@ -1,0 +1,60 @@
+/* CSS for a responsive layout */
+@media (max-width: 992px) {
+    .box{
+        left: 0%;
+    }
+    .spin_btn{
+        position: absolute; 
+        top: 50%;
+        right: 12%;
+        transform: translate(-50%, -50%);
+        display: grid;
+        place-items: center;
+        width: 75px;
+        height: 75px;
+        border-radius: 50%
+    }
+    .mainbox::after{
+        right: -6%;
+    }
+    @keyframes animateArrow{
+        50%{
+            right: -3%;
+        }
+    }
+}
+@media (max-width: 768px){
+    .left-flexbox{
+        display: grid;
+        place-items: center;
+
+    }
+    .right-flexbox{
+        padding-top: 5%;
+        display: flex; 
+        flex-direction: column;
+        align-items: center;
+        justify-content: center; 
+    }
+}
+@media (max-width: 492px){
+    h6{
+        font-size: 9px!important;
+    }
+    .mainbox{
+        width: 250px;
+        height: 250px;
+    }
+    .box{
+        border: 15px solid hsl(220, 75%, 10%);
+    }
+    .spin_btn{
+        position: absolute; 
+        top: 50%;
+        right: -2.5%;
+    }
+    .spin{
+        width: 50px;
+        height: 50px;
+    }
+}

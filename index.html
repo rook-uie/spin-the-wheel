@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spin-the-wheel</title>
+
+    <!-- CSS Stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="responsive.css">
+
+    <!-- Bootstrap CSS Stylesheet -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+    <!-- Bootstrap Javascript Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <!-- spin-the-wheel alert -->
+    <div class="alert  alert-dismissible  fade show" role="alert">
+
+        <!-- button to close the alert -->
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="alert" aria-label="Close"></button>
+
+        <div class="row">
+
+            <!-- contains the spin-the-wheel popup -->
+            <div class="left-flexbox col-lg-6 col-md-8">
+                <div class="mainbox" id="mainbox">
+                    <div class="box" id="box">
+                        <div class="box1">
+                            <span class="font span1"><h6>50% OFF</h6></span>
+                            <span class="font span2"><h6>20% OFF</h6></span>
+                            <span class="font span3"><h6>Free Shipping</h6></span>
+                            <span class="font span4"><h6>50% OFF</h6></span>
+                            <span class="font span5"><h6>20% OFF</h6></span>
+                            <span class="font span6"><h6>Free Shipping</h6></span>
+                        </div>
+                        <div class="box2">
+                            <span class="font span1"><h6>50% OFF</h6></span>
+                            <span class="font span2"><h6>20% OFF</h6></span>
+                            <span class="font span3"><h6>Free Shipping</h6></span>
+                            <span class="font span4"><h6>50% OFF</h6></span>
+                            <span class="font span5"><h6>20% OFF</h6></span>
+                            <span class="font span6"><h6>Free Shipping</h6></span>
+                        </div>
+                    </div>
+
+                    <!-- spin button -->
+                    <div class="spin_btn">
+                        <button class="spin" onclick="spin()">SPIN</button>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- right column of the popup -->
+            <div class="right-flexbox col-lg-6 col-md-4">
+                <h1 style="width: 6.5em;">SPIN TO WIN</h1>
+                <p>Spin to win a discount</p>
+                <p>Click on the wheel to start</p>
+            </div>
+        </div>
+      </div>
+
+      <!-- Javascript Files -->
+      <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+      <script src="main.js"></script>
+</body>
+</html>
